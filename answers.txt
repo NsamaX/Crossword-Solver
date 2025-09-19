@@ -1,0 +1,80 @@
+Found 2 complete solutions.
+
+Solution 1: MIRROR QUANTITY SPREAD CYCLE
+
+word: MIRROR
+
+Letter M at position (5,3)
+Letter I at position (5,4)
+Letter R at position (5,5)
+Letter R at position (4,4)
+Letter O at position (3,5)
+Letter R at position (4,5)
+
+word: QUANTITY
+
+Letter Q at position (2,3)
+Letter U at position (3,3)
+Letter A at position (4,2)
+Letter N at position (3,2)
+Letter T at position (3,1)
+Letter I at position (4,1)
+Letter T at position (5,2)
+Letter Y at position (5,1)
+
+word: SPREAD
+
+Letter S at position (5,4)
+Letter P at position (4,3)
+Letter R at position (3,4)
+Letter E at position (4,4)
+Letter A at position (5,5)
+Letter D at position (4,5)
+
+word: CYCLE
+
+Letter C at position (5,1)
+Letter Y at position (5,2)
+Letter C at position (5,3)
+Letter L at position (4,2)
+Letter E at position (4,1)
+
+Solution 2: RASPED QUANTITY MIRROR CYCLE
+
+word: RASPED
+
+Letter R at position (1,4)
+Letter A at position (2,5)
+Letter S at position (3,4)
+Letter P at position (3,3)
+Letter E at position (2,4)
+Letter D at position (1,5)
+
+word: QUANTITY
+
+Letter Q at position (2,3)
+Letter U at position (3,3)
+Letter A at position (4,2)
+Letter N at position (3,2)
+Letter T at position (3,1)
+Letter I at position (4,1)
+Letter T at position (5,2)
+Letter Y at position (5,1)
+
+word: MIRROR
+
+Letter M at position (5,3)
+Letter I at position (5,4)
+Letter R at position (5,5)
+Letter R at position (4,4)
+Letter O at position (3,5)
+Letter R at position (4,5)
+
+word: CYCLE
+
+Letter C at position (5,1)
+Letter Y at position (5,2)
+Letter C at position (5,3)
+Letter L at position (4,2)
+Letter E at position (4,1)
+
