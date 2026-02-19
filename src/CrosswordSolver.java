@@ -1,3 +1,5 @@
+package src;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -287,8 +289,11 @@ class CrosswordSolver {
             if (allSolutions.isEmpty()) {
                 System.out.println("No possible solutions found.");
             } else {
-                System.out.println("Possible " + allSolutions.size() + " solution(s)");
-                try (BufferedWriter writer = new BufferedWriter(new FileWriter("path.txt", StandardCharsets.UTF_8))) {
+                System.out.println("========================================");
+                System.out.println("CROSSWORD SOLVER RESULTS");
+                System.out.println("========================================");
+                System.out.println("Possible " + allSolutions.size() + " solution(s):");
+                try (BufferedWriter writer = new BufferedWriter(new FileWriter("Results.txt", StandardCharsets.UTF_8))) {
                     writer.write("Possible " + allSolutions.size() + " solution(s)\n");
                     for (int s = 0; s < allSolutions.size(); s++) {
                         List<Path> solution = allSolutions.get(s);
@@ -311,9 +316,9 @@ class CrosswordSolver {
                             writer.write("\n");
                         }
                     }
-                    System.out.println("\nResults written to path.txt");
+                    System.out.println("\nResults written to results.txt");
                 } catch (IOException e) {
-                    System.err.println("Error writing to path.txt: " + e.getMessage());
+                    System.err.println("Error writing to results.txt: " + e.getMessage());
                 }
             }
         } catch (Exception e) {

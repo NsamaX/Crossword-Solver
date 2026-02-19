@@ -1,15 +1,12 @@
+package src;
+
 class Main {
     public static void main(String[] args) {
-        String[] crossword = {
-            "avheiw",
-            "dgetlr",
-            "aacaco",
-            "tsetta",
-            "nueoec",
-            "trdnpe"
-        };
-        int[] lengths = {5,7,9,6,9};
         try {
+            String imagePath = ImageFileLocator.findFirstPngInCurrentDir();
+            CrosswordReader.Result result = CrosswordReader.readFromImage(imagePath);
+            String[] crossword = result.getCrossword();
+            int[] lengths = result.getLengths();
             if (crossword == null || crossword.length == 0) {
                 throw new IllegalArgumentException("Crossword grid cannot be empty");
             }
@@ -25,11 +22,11 @@ class Main {
             }
             // English source: https://github.com/david47k/top-english-wordlists
             CrosswordSolver crosswordSolver = new CrosswordSolver(
-                "languages/english-nouns.txt",
-                "languages/english-verbs.txt"
+                "src/languages/english-nouns.txt",
+                "src/languages/english-verbs.txt"
             );
             crosswordSolver.solve(crossword, lengths);
-        } catch (IllegalArgumentException e) {
+        } catch (Exception e) {
             System.err.println("ERROR: " + e.getMessage());
             System.err.println("Program terminated.");
             System.exit(1);
