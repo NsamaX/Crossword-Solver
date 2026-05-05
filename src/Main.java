@@ -21,7 +21,7 @@ class Main {
                 }
             }
             // English source: https://github.com/david47k/top-english-wordlists
-            CrosswordSolver crosswordSolver = new CrosswordSolver(
+            CrosswordSolverV2 crosswordSolver = new CrosswordSolverV2(
                 "src/languages/english-nouns.txt",
                 "src/languages/english-verbs.txt"
             );
